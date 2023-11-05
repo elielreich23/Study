@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links & images</title>
+</head>
+
+<body>
+    <h1>Home page</h1>
+    <a href="https://www.theodinproject.com/about">click me</a>
+
+    <a href="./Pages/about.html">About</a>
+	<img src="./images/dog.jpg" alt="odin-project-logo">
+
+    <!-- In many cases, this will work just fine; however, you can still run into unexpected issues
+ with this approach. Prepending ./ before the link will in most cases prevent such issues. By adding 
+./ you are specifying to your code that it should start looking for the file/directory relative to the 
+current directory. -->
+
+</body>
+<!-- links & images section there are two type of links attribute -->
+<!-- this open the link on the same page -->
+<a href="https://www.theodinproject.com/about">click me</a>
+<!--opens link in a new tab with additional rules  -->
+<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>
+<!-- The noopener value prevents the opened link from gaining access to the webpage from which it was 
+opened. The noreferrer value prevents the opened link from knowing which webpage or resource has 
+a link (or ‘reference’) to it. It also includes the noopener behaviour and thus can be used by 
+itself as well. Why do we need this added behaviour for opening links in new tabs? Security reasons.
+may change the original webpage to a different one to trick users. This is referred to as tabnabbing. 
+The prevention of access that is caused by noopener prevents phishing attacks where the opened link
+links to it. Note that you may be fine if you forget to add rel="noopener noreferrer" since more 
+Adding the noreferrer value can be done if you wish to not let the opened link know that your webpage 
+in line with good coding practices and to err on the side of caution, it is recommended to always
+recent versions of browsers provide this security if only target="_blank" is present. Nevertheless,
+pair a target="_blank" with a rel="noopener noreferrer". links to pages  on other sites are called 
+abolute links, links tyo pages on your site are called relative links-->
+</body>
+
+</html>
