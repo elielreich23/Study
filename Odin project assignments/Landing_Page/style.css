@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+:root{
+    --color1: #1f2937;
+    --color2: #f9faf8;
+    --color3: #E5E7EB;
+    --color4: #3882f6;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +17,25 @@ body {
 }
 
 header{
-    background-color: #1f2937;
+    background-color: var(--color1);
     padding: 1em 13em;
 }
+
+#logo{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color1);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+}
+
